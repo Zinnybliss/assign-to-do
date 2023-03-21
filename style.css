@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: white;
+    margin-top: 5rem;
+    height: 4rem;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    color: maroon;
+}
+
+.main-container{
+    height: 35em;
+    width: 30em;
+    background-color: whitesmoke;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgb(41, 7, 7, 0.8);
+}
+
+form{
+    margin-bottom: 3rem;
+}
+
+input{
+    height: 2.5rem;
+    width: 23rem;
+    border-radius: 10px;
+    padding-left: 1em;
+}
+
+button{
+    width: 5em;
+    height: 3.5em;
+    margin-left: 1em;
+    border-radius: 10px;
+    background-color: maroon;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.task{
+    display: flex;
+    width: 22rem;
+    border-radius: 10px;
+    background-color: rgb(157, 153, 153);
+    color: whitesmoke;
+    margin-left: 3em;
+    margin-top: 2em;
+    padding-left: 1em;
+    position: relative;
+}
+
+.detail{
+    cursor: pointer;
+}
+
+.delete{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+
+i:hover{
+    color: red;
+}
+
+i:active{
+    color: blue;
+}
+
+@media screen and (max-width: 425px){
+    header{
+        width: 100%;
+    }
+    
+    .main-container{
+        width: 18rem;
+    }
+
+    input{
+        width: 11rem;
+    }
+
+    .task{
+        width: 15rem;
+        position: relative;
+        left: -2em;
+    }
+}
